@@ -1,14 +1,23 @@
 # Chi N Do Study
 
-### Chi
-Kotlin, Android
+매주 월요일 21:00 - 23:00
+매주 화요일 21:00 - 23:00
 
-### Do
-Java, Spring, Backend
+온라인 모각코 스터디
+Algorithm, Data Structure, OS, CS, Design Pattern
 
 ------------------------
 
-매주 월요일 21:00 - 23:00
+### 스터디 규칙
+- 월요일 21:00 ~ 23:00 고정
+- 화요일 21:00 ~ 23:00 자율
 
-모각코
-Algorithm, Data Structure, OS, CS, Design Pattern
+### 과제
+- 객체지향의 사실과 오해 학습 후 정리
+- 백준 알고리즘 문제 5문제
+  - https://solved.ac/class
+
+### 벌금
+- 사전 협의 후 일정조율해서 참석하면 OK
+- 당일 불참시 1만원
+- 과제 하나당 1만원
