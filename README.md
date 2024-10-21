@@ -21,3 +21,7 @@ Algorithm, Data Structure, OS, CS, Design Pattern
 - 사전 협의 후 일정조율해서 참석하면 OK
 - 당일 불참시 1만원
 - 과제 하나당 1만원
+
+- 김도훈
+- 박치웅 : 1만원
+- 임병영 : 2만원
