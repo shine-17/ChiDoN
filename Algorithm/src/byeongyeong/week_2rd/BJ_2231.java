@@ -1,4 +1,4 @@
-package byeongyeong.class2;
+package byeongyeong.week_2rd;
 
 import java.io.BufferedReader;
 import java.io.IOException;
