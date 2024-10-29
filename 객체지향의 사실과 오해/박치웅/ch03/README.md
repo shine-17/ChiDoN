@@ -84,3 +84,63 @@ ex) 앨리스가 변하던 말던 앨리스는 앨리스다 이게 정적 모델
 - 마무리
 객체지향에서 중요한 것은 동적으로 변하는 객체의 '상태'와 상태를 변경하는 '행위' 이다.
 클래스는 타입을 구현하기 위해 프로그래밍 언어에서 제공하는 구현 매커니즘일 뿐.
+
+
+- 개념: '탈 것' 이란 개념을 만든다.
+interface Vehicle {
+    fun move()
+    fun stop()
+}
+
+- 타입: 'car' 클래스는 'Vehicle' 이란 타입을 구현 한다.
+class Car : Vehicle { }
+
+// 개념: 동물이라는 일반적인 아이디어를 나타냄
+// 타입: Animal은 하나의 타입으로 사용될 수 있음
+// 추상화: 동물의 공통적인 특성을 추출하여 단순화함
+abstract class Animal {
+    // 추상화: 모든 동물이 이름을 가진다는 공통점을 추출
+    abstract val name: String
+
+    // 추상화: 모든 동물이 소리를 낸다는 공통점을 추출
+    // 타입: 이 메서드는 Animal 타입의 일부
+    abstract fun makeSound()
+
+    // 추상화: 모든 동물이 잠을 잔다는 공통점을 구체적으로 구현
+    // 타입: 이 메서드는 Animal 타입의 일부
+    fun sleep() {
+        println("$name is sleeping")
+    }
+}
+
+// 타입: Dog는 구체적인 타입
+// 추상화: Animal의 추상적 개념을 구체화함
+class Dog(override val name: String) : Animal() {
+    // 추상화: makeSound의 추상적 개념을 개에 맞게 구체화
+    override fun makeSound() {
+        println("$name says: Woof!")
+    }
+}
+
+// 타입: Cat은 구체적인 타입
+// 추상화: Animal의 추상적 개념을 구체화함
+class Cat(override val name: String) : Animal() {
+    // 추상화: makeSound의 추상적 개념을 고양이에 맞게 구체화
+    override fun makeSound() {
+        println("$name says: Meow!")
+    }
+}
+
+fun main() {
+    // 타입: animals는 List<Animal> 타입
+    val animals = listOf(
+        Dog("Buddy"),  // Dog 타입의 인스턴스
+        Cat("Whiskers")  // Cat 타입의 인스턴스
+    )
+
+    // 추상화의 이점: 구체적인 타입을 알 필요 없이 Animal 타입으로 다룸
+    for (animal in animals) {
+        animal.makeSound()  // 다형성: 각 동물 타입에 맞는 메서드 호출
+        animal.sleep()  // 공통 동작: 모든 Animal에 대해 동일하게 적용
+    }
+}
