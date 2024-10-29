@@ -103,12 +103,12 @@ abstract class Animal {
     // 추상화: 모든 동물이 이름을 가진다는 공통점을 추출
     abstract val name: String
 
-    // 추상화: 모든 동물이 소리를 낸다는 공통점을 추출
-    // 타입: 이 메서드는 Animal 타입의 일부
+// 추상화: 모든 동물이 소리를 낸다는 공통점을 추출
+// 타입: 이 메서드는 Animal 타입의 일부
     abstract fun makeSound()
 
-    // 추상화: 모든 동물이 잠을 잔다는 공통점을 구체적으로 구현
-    // 타입: 이 메서드는 Animal 타입의 일부
+// 추상화: 모든 동물이 잠을 잔다는 공통점을 구체적으로 구현
+// 타입: 이 메서드는 Animal 타입의 일부
     fun sleep() {
         println("$name is sleeping")
     }
@@ -139,7 +139,7 @@ fun main() {
         Cat("Whiskers")  // Cat 타입의 인스턴스
     )
 
-    // 추상화의 이점: 구체적인 타입을 알 필요 없이 Animal 타입으로 다룸
+// 추상화의 이점: 구체적인 타입을 알 필요 없이 Animal 타입으로 다룸
     for (animal in animals) {
         animal.makeSound()  // 다형성: 각 동물 타입에 맞는 메서드 호출
         animal.sleep()  // 공통 동작: 모든 Animal에 대해 동일하게 적용
