@@ -9,7 +9,7 @@ import java.math.BigInteger;
  * 3주차 과제 : 15829(Hashing), 1259(팰린드롬수), 1546(평균)
  *
  * 15829, Hashing
- * https://www.acmicpc.net/problem/15829
+ * 출처: https://www.acmicpc.net/problem/15829
  *
  * 해당 문제는 길기 때문에 링크 참조
  *
