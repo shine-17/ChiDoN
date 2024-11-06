@@ -9,15 +9,6 @@ public class BJ_2292_벌집 {
 
         try {
 
-            /*
-                1
-                6
-                12
-                18
-                24
-
-             */
-
             int n = Integer.parseInt(br.readLine());
             int seq = 0;
             int count = 0;
@@ -31,7 +22,6 @@ public class BJ_2292_벌집 {
             }
 
             System.out.println(count);
-
 
         } catch(Exception ignored) {}
     }
