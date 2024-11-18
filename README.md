@@ -22,7 +22,7 @@ Algorithm, Data Structure, OS, CS, Design Pattern
 ### 벌금내역
 - 김도훈 
 - 박치웅 : 3만원
-- 임병영 : 3만원
+- 임병영 : 4만원
 
 [1주차] 2024. 10. 21 : 박치웅 책 과제 / 임병영 책 과제, 알고리즘 과제
 <br/>
