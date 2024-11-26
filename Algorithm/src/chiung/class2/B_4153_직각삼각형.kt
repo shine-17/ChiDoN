@@ -1,3 +1,4 @@
+/*
 package chiung.class2
 
 import java.util.*
@@ -24,4 +25,4 @@ class B_4153_직각삼각형 {
             }
         }
     }
-}
+}*/

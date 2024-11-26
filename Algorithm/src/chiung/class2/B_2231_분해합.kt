@@ -1,7 +1,9 @@
+/*
 package chiung.class2
 
 import java.util.*
 
+*/
 /**
  * inputNum : 분해합
  * sum : 각 자릿수 더한 값
@@ -14,18 +16,21 @@ import java.util.*
  * 분해합 : ex) 123 -> 1 + 2 + 3 + 123 = 129
  *
  * 분해합은 항상 생성자보다 크거나 같다.
- */
+ *//*
+
 fun main() {
     val sc = Scanner(System.`in`)
     val inputNum = sc.nextLine()
     var result = 0
 
     for(i in 1..inputNum.toInt()){
-        /**
+        */
+/**
          * digitToInt() -> char를 10진수 숫자로 변경
          * string으로 변경 후 각 문자열을 정수로 변경하고 List<Int> 반환
          * ex) i : 123 -> [1, 2, 3]
-         */
+         *//*
+
         val sum = i.toString().map { it.digitToInt() }
         val value = sum.sum() + i
 
@@ -34,4 +39,4 @@ fun main() {
         }
     }
     println(result)
-}
+}*/

@@ -1,3 +1,4 @@
+/*
 package chiung.class2
 
 import java.util.*
@@ -42,4 +43,4 @@ fun main(){
 //                print(totalNum % bundlePen)
 //                break
 //            }
-}
+}*/

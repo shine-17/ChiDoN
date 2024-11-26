@@ -1,7 +1,9 @@
+/*
 package chiung.class2
 
 import java.util.*
 
+*/
 /**
  * 힌트
  * 브루트포스 알고리즘 == 완전 탐색
@@ -17,7 +19,8 @@ import java.util.*
  *
  * 출력
  * 첫째 줄에 M을 넘지 않으면서 M에 최대한 가까운 카드 3장의 합 출력
- */
+ *//*
+
 
 fun main() {
     val sc = Scanner(System.`in`)
@@ -36,4 +39,4 @@ fun main() {
         }
     }
     println(result.max())
-}
+}*/

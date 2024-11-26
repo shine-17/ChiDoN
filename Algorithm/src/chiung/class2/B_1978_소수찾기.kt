@@ -1,3 +1,4 @@
+/*
 package chiung.class2
 
 import java.util.*
@@ -25,4 +26,4 @@ fun result(n: Int): Boolean {
     }
 
     return true
-}
+}*/
