@@ -17,7 +17,6 @@ public class BJ_11050_이항계수1 {
             int result = fac(n) / (fac((n - k)) * fac(k));
             System.out.println(result);
 
-
         } catch (Exception ignored) {}
     }
 
