@@ -21,7 +21,7 @@ public class BJ_2869_달팽이는올라가고싶다 {
                 day = 1;
             }
             else {
-                day = (v - a) % (a - b) == 0 ? (v - a) / (a - b) : (v - a) / (a - b) + 1;
+                day = (v - a) % (a - b) == 0 ? day : day + 1;
             }
 
             day++;
