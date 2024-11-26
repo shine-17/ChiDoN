@@ -1,5 +1,9 @@
 package byeongyeong.week_6rd;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  * 6주차 과제 : 1181(단어 정렬), 1436(영화 감독 숌), 1676(팩토리얼 0의 개수)
  *
@@ -14,7 +18,20 @@ package byeongyeong.week_6rd;
  */
 public class BJ_1436 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
+
+        int num = 666;
+        int count = 1;
+
+        while (count != N) {
+            num++;
+            if (String.valueOf(num).contains("666")) {
+                count++;
+            }
+        }
+        System.out.println(num);
     }
 }
