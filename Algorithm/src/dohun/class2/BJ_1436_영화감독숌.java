@@ -11,8 +11,8 @@ public class BJ_1436_영화감독숌 {
 
             int n = Integer.parseInt(br.readLine());
 
-            int seq = 0;
-            int i = 665;
+            int seq = 0; // 순서
+            int i = 665; // 종말의 수 찾기
             while(seq != n) {
                 i++;
 
