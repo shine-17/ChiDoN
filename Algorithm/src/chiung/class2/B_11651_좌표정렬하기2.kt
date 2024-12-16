@@ -12,7 +12,7 @@ fun main() {
 
     val inputNum = Array(inputLength) { Pair(sc.nextInt(), sc.nextInt()) }
 
-    inputNum.sortWith(compareBy({ it.first }, { it.second }))
+    inputNum.sortWith(compareBy({ it.second }, { it.first }))
 
     for (i in inputNum){
         println("${i.first} ${i.second}")

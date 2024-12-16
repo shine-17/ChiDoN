@@ -11,14 +11,13 @@ fun main() {
     val numList = List(inputLength) { sc.nextInt() }
     val result = StringBuilder()
 
-    val wordSortToLength = numList
-        .distinct()
-        .sorted()
-
 //    val wordSortToLength = numList
-//        .toMutableSet()
-//        .toList()
+//        .distinct()
 //        .sorted()
+
+    val wordSortToLength = numList
+        .toMutableSet()
+        .sorted()
 
     for (i in wordSortToLength){
         result.append(i).append('\n')

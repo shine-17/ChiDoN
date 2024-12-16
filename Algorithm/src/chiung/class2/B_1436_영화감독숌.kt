@@ -5,13 +5,11 @@
 //fun main() {
 //    val sc = Scanner(System.`in`)
 //
-//    while(true){
-//    val inputNum = sc.nextInt()
-//
-//        if(inputNum == 0) break
-//
-//    println(findValue(inputNum))
-//    }
+////    while(true){
+//        val inputNum = sc.nextInt()
+////        if(inputNum == 0) break
+//        println(findValue(inputNum))
+////    }
 //
 //}
 //

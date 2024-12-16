@@ -16,7 +16,13 @@ fun main() {
 
     val wordSortToLength = wordList
         .distinct()
-        .sortedWith(compareBy<String> { it.length }.thenBy { it })
+        .sortedWith(
+            compareBy<String> {
+                it.length
+            }.thenBy {
+                it
+            }
+        )
 
     for (i in wordSortToLength){
         result.append(i).append('\n')

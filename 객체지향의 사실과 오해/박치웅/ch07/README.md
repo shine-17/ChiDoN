@@ -52,8 +52,9 @@ ex)
 * 객체가 메시지를 선택하는 경우. 
 class Customer {
     fun orderCoffee(megaCoffee: MegaCoffee, coffeeType: String) {
+
     val megaCoffee = if (coffeeType == "Espresso") {
-    megaCoffee.makeEspressoCoffee()
+        megaCoffee.makeEspressoCoffee()
     } else {
         megaCoffee.makeLatteCoffee()
     }
@@ -69,9 +70,10 @@ class MegaCoffee {
 data class Coffee(val type: String)
 
 -> 문제점 
-1. Customer 객체가 Coffee의 내부 구현을 알고 있다.
+1. Customer 객체가 MegaCoffee의 내부 구현을 알고 있다.
 2. 커피 종류에 따라 어떤 메서드를 호출할지 Customer가 결정함.
 3. 새로운 커피 종류가 추가되면 Customer의 코드도 변경해야함.
+
 
 * 메시지가 객체를 선택하는 경우. 
 class Customer {
@@ -104,8 +106,16 @@ data class Coffee(val type: String)
 * 개념 관점 : 손님 (Customer) 이  커피 매장 (MegaCoffee) 에서 커피를 주문할 때, 각각의 개념들이 협력해서 커피를 주문 받고 커피를 만들고 제공한다.
 * 명세 관점 : 인터페이스
 ex) interface CoffeeMaker { 
-        fun makeCoffee(coffeeType: String): Coffee
-     }
+        fun makeCoffee(coffeeType: String)
+    }
+* 
+class coffee : CoffeeMaker{
+   override fun makeCoffee(coffeeType: String)
+} 
+
+class b() {
+    coffee.
+}
 
 * 구현 관점 : MegaCoffee 클래스의 makeCoffee
 
