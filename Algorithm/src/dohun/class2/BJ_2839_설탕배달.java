@@ -14,7 +14,9 @@ public class BJ_2839_설탕배달 {
 
             if(n % 5 == 0) result = n / 5;
             else {
-                int i = n / 5;
+                // n = 11
+                // i = 1
+                int i = n / 5; // 5kg 봉지 개수
 
                 while(i >= 0) {
                     if((n - (5 * i)) % 3 == 0) {
