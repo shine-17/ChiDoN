@@ -21,7 +21,6 @@ fun main() {
         .groupingBy { it }
         .eachCount()
 
-
     br.readLine().toInt()
     val query = br.readLine().split(" ").map { it.toInt() }
 

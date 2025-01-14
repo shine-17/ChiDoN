@@ -16,7 +16,7 @@ fun main() {
         var isError = false
 
         if (input == ".") break
-
+        // input = ([ (([( [ ] ) ( ) (( ))] )) ]).
         for (item in input) {
             when (item) {
                 '(', '[' -> stack.push(item)
