@@ -13,6 +13,7 @@ public class BJ_2108_통계학 {
 
             HashMap<Integer, Integer> map = new HashMap<>();
             LinkedList<Integer> nums = new LinkedList<>();
+
             int n = Integer.parseInt(br.readLine());
             for (int i=0; i<n; i++) {
                 Integer num = Integer.parseInt(br.readLine());

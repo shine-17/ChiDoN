@@ -35,6 +35,7 @@ public class BJ_11866_요세푸스문제0 {
                 }
             }
 
+            // [1, 2, 3] -> <1, 2, 3>
             System.out.println(set.toString().replaceAll("\\[", "<").replaceAll("\\]", ">"));
 
         } catch (Exception ignored) {}
