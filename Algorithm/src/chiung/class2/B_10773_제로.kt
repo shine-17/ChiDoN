@@ -10,7 +10,6 @@ fun main() {
     val stack = Stack<Int>()
     var index = 0
 
-
     while (index != inputNum) {
         val input = br.readLine().toInt()
 

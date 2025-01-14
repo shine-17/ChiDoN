@@ -14,12 +14,16 @@ fun main() {
     val br = BufferedReader(InputStreamReader(System.`in`))
 
     val inputX = br.readLine().toInt()
-    val listX = br.readLine().split(" ").map { it.toInt() }.toIntArray().toHashSet() // -> toHash로 안바꾸면 시간초과 됨 ㅋㅋ
+//    val listX = br.readLine().split(" ").map { it.toInt() }.toIntArray().toHashSet() // -> toHash로 안바꾸면 시간초과 됨 ㅋㅋ
+
+    val listX = br.readLine().split(" ").map { it.toInt() }.toIntArray().toHashSet()
 
     val inputY = br.readLine().toInt()
     val listY = br.readLine().split(" ").map { it.toInt() }.toIntArray()
 
     val result = StringBuilder()
+
+    // 리스트의 contains의 시간복잡도와 그냥 일반의 contains의 시간복잡도 차이를 한번 보자
 
     for(i in 0..< inputY){
         if(listX.contains(listY[i])){
