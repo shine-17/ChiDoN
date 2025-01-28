@@ -27,6 +27,10 @@ public class BJ_1654_랜선자르기 {
             long start = 1;
             long end = Arrays.stream(lines).max().orElse(0) + 1;
 
+            // n : 11
+            // 상한 -> n : 12 -> n보다 큰 값 중에 가장 작은 값
+            // 하한 -> n : 10 -> n보다 작은 값 중에 가장 큰 값
+
             while (start < end) {
                 mid = (start + end) / 2;
                 count = cutLine(mid);
